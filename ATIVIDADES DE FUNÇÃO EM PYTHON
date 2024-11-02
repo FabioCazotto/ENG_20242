@@ -1,1 +1,79 @@
+# Exercício 1
+def saudacao():
+    nome = input("Digite seu nome: ")
+    cidade = input("Digite sua cidade: ")
+    print(f"Olá, {nome}! Você vive em {cidade}.")
 
+# Exercício 2
+def area_perimetro_retangulo():
+    comprimento = float(input("Digite o comprimento do retângulo: "))
+    largura = float(input("Digite a largura do retângulo: "))
+    area = comprimento * largura
+    perimetro = 2 * (comprimento + largura)
+    print(f"Área: {area}, Perímetro: {perimetro}")
+
+# Exercício 3
+def conversao_medida():
+    metros = float(input("Digite a medida em metros: "))
+    centimetros = metros * 100
+    milimetros = metros * 1000
+    print(f"{metros} metros é igual a {centimetros} cm e {milimetros} mm.")
+
+# Exercício 4
+def area_retangulo():
+    largura = float(input("Digite a largura do retângulo (cm): "))
+    altura = float(input("Digite a altura do retângulo (cm): "))
+    area = largura * altura
+    print(f"A área do retângulo é {area} cm².")
+
+# Exercício 5
+def compara_idades():
+    idade1 = int(input("Digite a idade da primeira pessoa: "))
+    idade2 = int(input("Digite a idade da segunda pessoa: "))
+    if idade1 == idade2:
+        print("As idades são iguais.")
+    else:
+        print("As idades são diferentes.")
+
+# Exercício 6
+def calcula_imc():
+    peso = float(input("Digite seu peso (kg): "))
+    altura = float(input("Digite sua altura (m): "))
+    imc = peso / (altura ** 2)
+    print(f"Seu IMC é: {imc:.2f}")
+
+# Exercício 7
+def compara_numeros():
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    if num1 > num2:
+        print("O primeiro número é maior.")
+    elif num1 < num2:
+        print("O primeiro número é menor.")
+    else:
+        print("Os números são iguais.")
+
+# Exercício 8
+def media_tres_numeros():
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    num3 = float(input("Digite o terceiro número: "))
+    media = (num1 + num2 + num3) / 3
+    print(f"A média aritmética é: {media:.2f}")
+
+# Exercício 9
+import math
+def volume_cilindro():
+    raio = float(input("Digite o raio do cilindro (cm): "))
+    altura = float(input("Digite a altura do cilindro (cm): "))
+    volume = math.pi * (raio ** 2) * altura
+    print(f"O volume do cilindro é: {volume:.2f} cm³")
+
+# Exercício 10
+def compara_palavras():
+    palavra1 = input("Digite a primeira palavra: ")
+    palavra2 = input("Digite a segunda palavra: ")
+    if palavra1 == palavra2:
+        print("As palavras são iguais.")
+    else:
+        print("As palavras são diferentes.")
