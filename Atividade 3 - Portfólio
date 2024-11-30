@@ -1,0 +1,60 @@
+#1
+quadrados = list(map(lambda x: x**2, lista))
+#2
+fahrenheit = list(map(lambda c: c * 9/5 + 32, temperaturas))
+#3
+comprimentos = list(map(lambda palavra: len(palavra), palavras))
+#4
+dobrados = list(map(lambda x: x * 2, lista))
+#5
+prefixados = list(map(lambda nome: f"Sr./Sra. {nome}", nomes))
+#6
+pares = list(filter(lambda x: x % 2 == 0, numeros))
+#7
+curtas = list(filter(lambda palavra: len(palavra) < 5, palavras))
+#8
+maiores_de_idade = list(filter(lambda idade: idade > 18, idades))
+#9
+com_a = list(filter(lambda s: s.startswith('a'), strings))
+#10
+positivos = list(filter(lambda x: x > 0, numeros))
+#11
+soma = reduce(lambda x, y: x + y, numeros)
+#12
+produto = reduce(lambda x, y: x * y, lista)
+#13
+maior = reduce(lambda x, y: x if x > y else y, lista)
+#14
+frase = reduce(lambda x, y: f"{x} {y}", palavras)
+#15
+soma_digitos = list(map(lambda x: sum(int(d) for d in str(x)), numeros))
+#16
+dobrados_maiores_20 = list(filter(lambda x: x > 20, map(lambda x: x * 2, numeros)))
+#17
+palavras_com_e = len(list(filter(lambda palavra: 'e' in palavra, palavras)))
+#18
+abaixo_de_20 = list(filter(lambda c: c < 20, map(lambda f: (f - 32) * 5/9, fahrenheit)))
+#19
+soma_pares = sum(filter(lambda x: x % 2 == 0, lista))
+#20
+substituir_negativos = list(map(lambda x: x if x >= 0 else 0, lista))
+#21
+cubos = list(map(lambda x: x**3, numeros))
+#22
+eh_primo = lambda n: n > 1 and all(n % i != 0 for i in range(2, int(n**0.5) + 1))
+#23
+divididos_por_5 = list(map(lambda x: x / 5, lista))
+#24
+sem_vogais = "".join(filter(lambda x: x.lower() not in 'aeiou', string))
+#25
+maiusculas = list(map(lambda palavra: palavra.upper(), palavras))
+#26
+negativos = list(filter(lambda x: x < 0, lista))
+#27
+absolutos = list(map(lambda x: abs(x), lista))
+#28
+restos_div3 = list(map(lambda x: x % 3, lista))
+#29
+multiplicados_por_indice = list(map(lambda x: x[0] * x[1], enumerate(lista)))
+#30
+eh_palindromo = lambda palavra: palavra == palavra[::-1]
